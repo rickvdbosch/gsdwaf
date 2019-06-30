@@ -6,7 +6,7 @@ us during this session and walk out with a well-filled toolbox ready to get sh*t
 
 Running Azure Functions in AKS, or any other Kuberneters deployment, is well possible. But be prepared for a few pitfalls. We wil show you these pitfalls so you can avoid them. Besides that we will demonstrate how to use managed identities on AKS and how to best scale your application on Kubernetes.
 
-Configuring Dependency injection in Azure Function Recently has become easier. We will show how to configure DI and, as a bonus, how to inject or bind settings into your Function App.
+Configuring Dependency injection in Azure Function recently has become easier. We will show how to configure DI and, as a bonus, how to inject or bind settings into your Function App.
 
 ## About the speakers
 
