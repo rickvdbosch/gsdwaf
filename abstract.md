@@ -6,9 +6,9 @@ the new Dependency Injection. Join us during this session and walk out with a we
 get sh\*t done with Azure Functions!
 
 Running Azure Functions in AKS, or any other Kubernetes deployment, is very well possible. But be prepared for 
-a few pitfalls. We wil show you these pitfalls, and how to avoid them. 
+a few pitfalls. We will show you these pitfalls, and how to avoid them. 
 
-If you use Managed Identites, your applications will be more secure. We'll tell you why, our demos will 
+If you use Managed Identities, your applications will be more secure. We'll tell you why, our demos will 
 show you how! We'll use Managed Identities to securely connect to other Azure resources like Azure Key Vault.
 
 Azure Functions V 2.x now supports Dependency Injection, leveraging the ASP.NET Core Dependency Injection 
