@@ -1,14 +1,18 @@
 # Getting sh\*t done with Azure Functions (on AKS)!
 
 This session is packed with ways of making _you_ more productive with Azure Functions. From tips & tricks 
-to running Azure Functions on Azure Kubernete Service (AKS). From known pitfalls to implementing the new Dependency Injection. Join 
-us during this session and walk out with a well-filled toolbox ready to get sh\*t done with Azure Functions!
+to running Azure Functions on Azure Kubernetes Service (AKS). From using Managed Identities to implementing 
+the new Dependency Injection. Join us during this session and walk out with a well-filled toolbox ready to 
+get sh\*t done with Azure Functions!
 
-Running Azure Functions in AKS, or any other Kuberneters deployment, is well possible. But be prepared for a few pitfalls. We wil show you these pitfalls so you can avoid them. 
+Running Azure Functions in AKS, or any other Kubernetes deployment, is very well possible. But be prepared for 
+a few pitfalls. We wil show you these pitfalls, and how to avoid them. 
 
-Using Managed Identites, your Azure Function will be more secure. We will tell you why this is more secure. We will apply Managed Identities to Azure functions in the Portal and in AKS. A demo will show how Managed Identities will help to securely get secrets from Azure Key Vault.
+If you use Managed Identites, your applications will be more secure. We'll tell you why, our demos will 
+show you how! We'll use Managed Identities to securely connect to other Azure resources like Azure Key Vault.
 
-Configuring Dependency Injection in Azure Functions recently became easier. We will show how to configure DI and, as a bonus, how to inject or bind settings into your Function App.
+Azure Functions V 2.x now supports Dependency Injection, leveraging the ASP.NET Core Dependency Injection 
+features. We will show you how to configure and use DI.
 
 ## About the speakers
 
