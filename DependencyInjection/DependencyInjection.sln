@@ -5,7 +5,12 @@ VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicDi", "BasicDi\BasicDi.csproj", "{BBCFDB8F-36AC-4DEC-96AB-6141430557BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiAndHttp", "DiAndHttp\DiAndHttp.csproj", "{4778A439-A62D-4C2D-AA60-6AFA5F9F3545}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiAndHttp", "DiAndHttp\DiAndHttp.csproj", "{4778A439-A62D-4C2D-AA60-6AFA5F9F3545}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{03BA5A49-3488-43A4-8898-4CFB2A9E18F0}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe.md = ReadMe.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
