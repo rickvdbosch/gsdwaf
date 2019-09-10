@@ -1,0 +1,25 @@
+# Ideas
+
+- Discuss different hosting options and which to use when.
+  - Consumption plan.
+  - Premium plan (preview?).
+  - In ASP (e.g. in ASE).
+  - Docker / AKS.
+- Show the same function on different platforms:
+  - Local (develop / debug)
+  - On Azure in Consumption plan.
+  - In Azure Kubernetes Service (AKS)
+- Show managed identity in the different environments.
+  - Same app runs everywhere. Environment manages identity.
+    - In AKS: [AAD Pod Identity](https://github.com/Azure/aad-pod-identity). See also [Azure AD Pod Identity in AKS](https://vincentlauzon.com/2019/02/19/azure-ad-pod-identity-in-aks/).
+- Show managed identity access to several resources
+  - What about triggers / bindings and managed identity?
+- How triggers work and which pitfalls to avoid.
+  - Especially blob triggers. More especially on AKS.
+- Scale Azure functions in AKS with [KEDA](https://docs.microsoft.com/nl-nl/azure/azure-functions/functions-kubernetes-keda) (Kubernetes-based Event Driven Autoscaling). See also [Run Azure Functions in Kubernetes with KEDA](https://markheath.net/post/azure-functions-aks-keda)
+- Show DI in Azure functions.
+  - Also Azure functions don't have to be static anymore.
+  - Best practices.
+  - Cost of DI?
+  - Alternatives?
+  - Cross-wiring?
