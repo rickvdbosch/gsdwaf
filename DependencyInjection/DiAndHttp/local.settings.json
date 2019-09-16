@@ -3,6 +3,6 @@
   "Values": {
     "AzureWebJobsStorage": "UseDevelopmentStorage=true",
     "FUNCTIONS_WORKER_RUNTIME": "dotnet",
-    "PingUrl": "http://localhost:32121/api/Ping"
+    "PingUrl": "http://51.144.246.95/api/Ping"
   }
 }
