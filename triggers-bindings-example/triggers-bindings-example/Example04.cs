@@ -6,7 +6,7 @@ using Microsoft.Azure.WebJobs;
 using Microsoft.Extensions.Logging;
 using Microsoft.Azure.WebJobs.ServiceBus;
 
-namespace triggers_bindings_example
+namespace TriggersBindingsExample
 {
     public static class Example04
     {
@@ -22,7 +22,6 @@ namespace triggers_bindings_example
             [ServiceBus("process", Connection = "sbcs", EntityType = EntityType.Queue)]ICollector<string> queueCollector,
             ILogger log)
         {
-            log.LogInformation("Here we go... Messages!");
             using (var reader = new StreamReader(addedBlob))
             {
                 // The ServiceBus Output binding using an ICollector<T> which enables you to write a 

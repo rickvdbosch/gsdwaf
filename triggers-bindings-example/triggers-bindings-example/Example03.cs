@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Extensions.Logging;
 
-namespace triggers_bindings_example
+namespace TriggersBindingsExample
 {
     public static class Example03
     {

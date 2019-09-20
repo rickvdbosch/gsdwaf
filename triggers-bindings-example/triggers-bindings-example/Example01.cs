@@ -6,7 +6,7 @@ using Microsoft.Azure.WebJobs;
 using Microsoft.Extensions.Logging;
 using Microsoft.WindowsAzure.Storage;
 
-namespace triggers_bindings_example
+namespace TriggersBindingsExample
 {
     public static class Example01
     {
@@ -15,7 +15,6 @@ namespace triggers_bindings_example
             [BlobTrigger("upload/{name}", Connection = "scs")]Stream addedBlob,
             string name, ILogger log)
         {
-            log.LogInformation("We're starting our complex copy action here!");
             // The below code is the 'normal' way of uploading a file to storage:
             // - Connect to a Storage Account
             // - Create a BlobClient
