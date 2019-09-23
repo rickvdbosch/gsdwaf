@@ -22,10 +22,11 @@ namespace DependencyInjectionExample.Example04
         public async Task InvokePing()
         {
             var client = _httpClientFactory.CreateClient("PingClient");
+            var pingUrl = _pingSettings.PingUrl;
 
-            _logger.LogInformation("Pinging to [{url}].", _pingSettings.PingUrl);
+            _logger.LogInformation("Pinging to [{url}].", pingUrl);
 
-            var responseMessage = await client.GetAsync(_pingSettings.PingUrl);
+            var responseMessage = await client.GetAsync(pingUrl);
             responseMessage.EnsureSuccessStatusCode();
             var message = await responseMessage.Content.ReadAsStringAsync();
 
