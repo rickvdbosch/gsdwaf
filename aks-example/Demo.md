@@ -1,7 +1,6 @@
 ﻿# Demo steps for Azure Fucntion on AKS
 
-## Environment Login
-
+## Environment Login and preparation 
 ```powershell
 
 # Get connected to Azure
@@ -11,12 +10,21 @@ Select-AzSubscription -Subscription Techorama
 az login 
 az account set --subscription Techorama
 
-# Login to the resoruces.
+# Make sure we have the kubeclt CLI.
+az aks install-cli
+
+# Login to the resoruces
 Import-AzAksCredential -ResourceGroupName Techorama -Name techorama 
 az acr login --name techorama 
 
 # Make sure we use the right configuration in AKS.
 kubectl config use-context techorama
+
+# Create cluster role binding for AKS with RBAC
+kubectl create clusterrolebinding kubernetes-dashboard --clusterrole=cluster-admin --serviceaccount=kube-system:kubernetes-dashboard
+
+# Install KEDA and Osiris.
+func kubernetes install --namespace keda
 
 ```
 
@@ -24,19 +32,8 @@ kubectl config use-context techorama
 
 ```powershell
 
-# Create cluster role binding for AKS with RBAC
-kubectl create clusterrolebinding kubernetes-dashboard --clusterrole=cluster-admin --serviceaccount=kube-system:kubernetes-dashboard
-
-# And use it.
+# Start a proxy to the k8s dashboard.
 az aks browse --resource-group Techorama --name techorama
-
-```
-
-## Install Keda in kubernetes / AKS
-
-```powershell
-
-func kubernetes install --namespace keda
 
 ```
 
@@ -44,11 +41,11 @@ func kubernetes install --namespace keda
 
 ```powershell
 
-$version = 2; $tag = "techorama.azurecr.io/aksdemo:v${version}"
-
+# Build the function using ACS.
+$tag = "techorama.azurecr.io/aksdemo:v8"
 az acr build -r techorama -t $tag .
 
-# Use lowercase name
+# Deploy the function in k8s. Use lowercase name!
 func kubernetes deploy --name aksdemo --image-name $tag
 
 ```
