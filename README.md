@@ -1,6 +1,4 @@
-# azure-functions-aks
-
-## Gettings sh*t done with Azure Functions (on AKS)!
+# GSDwAF: Gettings sh*t done with Azure Functions (on AKS)!
 
 All documentation and source code of the Techorama talk about Azure Functions, Kubernetes, AKS and more.
 
