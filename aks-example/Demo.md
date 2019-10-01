@@ -42,7 +42,7 @@ az aks browse --resource-group Techorama --name techorama
 ```powershell
 
 # Build the function using ACS.
-$tag = "techorama.azurecr.io/aksdemo:v8"
+$tag = "techorama.azurecr.io/aksdemo:v10"
 az acr build -r techorama -t $tag .
 
 # Deploy the function in k8s. Use lowercase name!
