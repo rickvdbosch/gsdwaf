@@ -1,7 +1,6 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using DependencyInjectionExample.Example01;
 using Microsoft.Azure.WebJobs.Host.Executors;
 using Microsoft.Extensions.Logging;
 
@@ -24,6 +23,7 @@ namespace DependencyInjectionExample.Example02
 
             var hostId = await _hostIdProvider.GetHostIdAsync(cancellationToken);
             var when = DateTime.UtcNow.ToString("O");
+
             return $"Pong from {hostId} at {when}.";
         }
     }

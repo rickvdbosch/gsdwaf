@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "triggers-bindings-example",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dependency-injection-example", "dependency-injection-example\dependency-injection-example.csproj", "{E4F41CD5-F0BB-4B17-AB78-3F473B710E99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aks-example", "aks-example\aks-example.csproj", "{E37D39A5-50DB-4E34-A1B8-46FF5BFB90D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aks-example", "aks-example\aks-example.csproj", "{E37D39A5-50DB-4E34-A1B8-46FF5BFB90D7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "managed-identity-example", "managed-identity-example\managed-identity-example.csproj", "{C4D9402A-8F8A-40B4-8AB5-2D8AB8785BB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{E37D39A5-50DB-4E34-A1B8-46FF5BFB90D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E37D39A5-50DB-4E34-A1B8-46FF5BFB90D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E37D39A5-50DB-4E34-A1B8-46FF5BFB90D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4D9402A-8F8A-40B4-8AB5-2D8AB8785BB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4D9402A-8F8A-40B4-8AB5-2D8AB8785BB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4D9402A-8F8A-40B4-8AB5-2D8AB8785BB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4D9402A-8F8A-40B4-8AB5-2D8AB8785BB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
