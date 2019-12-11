@@ -11,7 +11,7 @@ namespace TriggersBindingsExample
         [FunctionName("Example05")]
         [return: Blob("copied/{sys.randguid}.txt", Connection = "scs")]
         public static string Run(
-            [HttpTrigger(AuthorizationLevel.Function, "post", Route = null)] RequestModel req,
+            [HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = null)] RequestModel req,
             ILogger log)
         {
             return req.Message;
